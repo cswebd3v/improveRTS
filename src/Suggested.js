@@ -1,14 +1,14 @@
 import React from "react";
-import "./Discussion.css";
+import "./Suggested.css";
 
-class Discussion extends React.Component {
+class Suggested extends React.Component {
     render() {
         return (
             <div className="main">
-                <h2>Comments</h2>
+                <h3>Game Title</h3>
             </div>
         )
     }
 }
 
-export default Discussion;
+export default Suggested;
