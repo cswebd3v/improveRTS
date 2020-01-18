@@ -1,0 +1,12 @@
+.preview-flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.suggested {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}

@@ -10,12 +10,13 @@ import CreateUser from "./CreateUser.js";
 function App() {
   return (
     <div className="App">
-      {/* add Links for Nav here */}
-      <Link to="/">Home</Link>
-      <Link to="/landing">Landing</Link>
-      <Link to="/videopage">Video</Link>
-      <Link to="/profile">Profile</Link>
-      <Link to="/createuser">Create User</Link>
+      <div className="navbar">
+        <Link to="/">Home</Link>
+        <Link to="/landing">Landing</Link>
+        <Link to="/videopage">Video</Link>
+        <Link to="/profile">Profile</Link>
+        <Link to="/createuser">Create User</Link>
+      </div>
       
 
       <Switch>

@@ -4,7 +4,7 @@ import "./Bio.css";
 class Bio extends React.Component {
     render() {
         return (
-            <div className="main">
+            <div className="bio">
                 <h2>Username</h2>
                 <p>paragraph with info</p>
             </div>

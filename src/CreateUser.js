@@ -6,8 +6,7 @@ import Banner from "./Banner.js";
 class CreateUser extends React.Component {
     render() {
         return (
-            <div className="main">
-                <Nav />
+            <div className="create-user">
                 <Banner />
                 <form className="login-form">
                     <div>

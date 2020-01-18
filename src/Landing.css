@@ -1,0 +1,13 @@
+.reel {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing {
+    display: block;
+    margin: 0 auto;
+    min-height: 100%;
+    width: 40%;
+    text-align: center;
+    background-color: lightblue;
+}

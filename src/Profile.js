@@ -7,8 +7,7 @@ import FaveList from "./FaveList.js";
 class Profile extends React.Component {
     render() {
         return (
-            <div className="main">
-                <Nav />
+            <div className="profile">
                 <Bio />
                 <FaveList />
             </div>
