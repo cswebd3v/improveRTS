@@ -1,0 +1,69 @@
+.choose-game {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 100%;
+    width: 100%;
+    background-color: #7D9BC1;
+    
+}
+
+.gameflex {
+    display: block;
+    margin: 0 auto;
+    min-height: 60%;
+    width: 50%;
+}
+
+.choose-wc3 {
+    display: block;
+    margin: 0 auto;
+    background-image: url('../images/arthas.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 225px;
+    width: 400px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.choose-sc2 {
+    background-image: url('../images/artanis.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    height: 220px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.choose-sc2:hover {
+    box-shadow: 0 4px 8px 0 #FFC72C, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.choose-wc3:hover {
+    box-shadow: 0 4px 8px 0 #FFC72C, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.h1style {
+    color: #FFC72C;
+    text-shadow: 2px 2px 4px #0C2340;
+}
+
+.hovertext, .hovertext2 {
+    display: none;
+}
+
+.choose-wc3:hover .hovertext {
+    display: block;
+}
+
+.choose-sc2:hover .hovertext2 {
+    display: block;
+}
+
+.gameflex > a {
+    text-decoration: none;
+    color: #FFC72C;
+    text-shadow: 2px 2px 4px #0C2340;
+}

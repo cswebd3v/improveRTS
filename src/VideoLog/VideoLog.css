@@ -1,0 +1,19 @@
+.video-log {
+    min-height: 100%;
+    width: 90%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.vlog-preview {
+    display: inline-block;
+    text-align: center;
+    height: 225px;
+    width: 400px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,12 @@
+.videobox {
+    background-color: #7D9BC1;
+    display: block;
+    margin: 0 auto;
+    height: 396px;
+    width:704px;
+}
+
+.jumbotron {
+    height: 50%;
+    margin-bottom: 75px;
+}

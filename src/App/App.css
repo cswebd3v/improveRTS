@@ -1,0 +1,136 @@
+
+
+.App {
+  height: 100%;
+  color: #0C2340;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #0C2340;
+}
+
+h1, h2, h3 {
+  font-family: 'Acme', sans-serif;
+  text-shadow: 2px 2px 4px #7D9BC1;
+}
+
+#logo {
+  color: #FFC72C;
+  margin-left: 10%;
+}
+
+
+
+.home, .landing, .video-page, .profile, .create-user, .choose-game {
+  
+}
+
+
+/* Screen Styles */
+/* 1280 x 720 avg laptop */
+@media screen and (max-width: 1300px) {
+  .app {
+   
+  }
+
+  .home, .landing, .profile, .video-page, .choose-game {
+    min-height: 150%;
+  }
+
+  .jumbotron {
+  
+  }
+
+  .videobox {
+    
+  }
+
+}
+
+/* 1024 x 1366 ipad Pro */
+@media screen and (max-width: 1025px) {
+  .home, .landing, .profile, .video-page, .create-user, .choose-game {
+    min-height: 50%;
+    font-size: 2.00rem;
+  }
+
+  .jumbotron {
+    height:75%;
+    min-width: 80%;
+    margin-bottom: 100px;
+  }
+  .videobox {
+    min-width: 100%;
+    margin-bottom: 75px;
+  }
+
+  .suggested {
+    margin-top: 50px;
+  }
+  .discussion {
+    margin-top: 75px;
+  }
+  .landing {
+    min-width: 70%;
+  }
+  .bio {
+    min-width: 75%;
+  }
+  .create-user {
+    min-width: 75%;
+  }
+  ::placeholder {
+    font-size: 1.50rem;
+  }
+  input {
+    line-height: 2.00rem;
+  }
+  button {
+    font-size: 2.00rem;
+    margin-top: 10px;
+  }
+}
+
+/* 768 x 1024 iPad */
+@media screen and (max-width: 770px) {
+  .home, .landing, .profile, .video-page, .create-user, .choose-game {
+    min-height: 50%;
+    font-size: 1.50rem;
+  }
+
+}
+
+/* 414 x 736 iPhone 6/7/8 Plus */
+@media screen and (max-width: 415px) {
+  .home, .profile, .video-page, .create-user, .choose-game {
+    min-height: 50%;
+    font-size: 1.25rem;
+  }
+
+  .landing {
+    font-size: 1.00rem;
+    min-width: 90%;
+  }
+
+  ::placeholder, button {
+    font-size: 1.00rem;
+  }
+
+}
+
+/* 375 x 667 iPhone 6/7/7 standard */
+@media screen and (max-width:376px) {
+
+}
+
+/* 320 x 568 iPhone 5/SE */
+@media screen and (max-width:321px) {
+  .home, .profile, .landing, .video-page, .create-user, .choose-game {
+    min-height: 50%;
+    font-size: 1.00rem;
+    min-width: 100%;
+  }
+}
