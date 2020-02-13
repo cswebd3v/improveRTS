@@ -4,6 +4,7 @@ import ReactPlayer from "react-player";
 import Jumbotron from "../Jumbotron/Jumbotron";
 import ScrollIntoView from 'react-scroll-into-view';
 import Dropdown from "../Dropdown/Dropdown";
+import {API_ENDPOINT} from "../config";
 
 class VideoLog extends React.Component {
     constructor(props) {
@@ -11,7 +12,8 @@ class VideoLog extends React.Component {
         this.state = {
             vods: [],
             url: '',
-            selectedValue: 'TvT'
+            selectedValue: 'TvT',
+            fetchURL: API_ENDPOINT
         };
         this.renderJumbo = this.renderJumbo.bind(this);
         this.handleChange = this.handleChange.bind(this);
@@ -28,7 +30,7 @@ class VideoLog extends React.Component {
                 url: 'https://www.youtube.com/watch?v=_upUmG_y29E'
             })
         }
-        fetch(`http://localhost:8000/api/vods/${this.props.gameId}`)
+        fetch(`${this.state.fetchURL}api/vods/${this.props.gameId}`)
             .then(res => res.json())
             .then(res => this.setState({
                 vods: res
@@ -51,7 +53,7 @@ class VideoLog extends React.Component {
     }
 
     updateLogs() {
-        fetch(`http://localhost:8000/api/vods/matchup/${this.state.selectedValue}`)
+        fetch(`${this.state.fetchURL}api/vods/matchup/${this.state.selectedValue}`)
             .then(res => res.json())
             .then(res => this.setState({
                 vods: res

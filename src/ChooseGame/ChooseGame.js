@@ -1,17 +1,19 @@
 import React from 'react';
 import './ChooseGame.css';
 import {Link} from "react-router-dom";
+import {API_ENDPOINT} from "../config";
 
 class ChooseGame extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             games: [],
+            fetchURL: API_ENDPOINT
         };
     }
 
     componentDidMount() {
-        fetch('http://localhost:8000/api/games')
+        fetch(`${this.state.fetchURL}api/games`)
             .then(res => res.json())
             .then(res => this.setState({
                 games: res
