@@ -100,14 +100,14 @@ class Dropdown extends React.Component {
         return (
             <div className="dropdown">
                 <form onSubmit={e => this.handleSubmit(e)}>
-                    <label htmlFor='matchup'>Matchup</label>
+                    <label htmlFor='matchup'>Choose a matchup:</label>
                     <select id='matchup' name='matchup' onChange={this.props.handleChange}>
                         {dropList.map((mu, i) => (
                             <option key={i} value={mu.title}>{mu.title}</option>
                         ))}
                     </select>
                 </form>
-                <button onClick={this.props.updateLogs}>Go</button>
+                <button onClick={this.props.updateLogs}>Filter Results</button>
             </div>
         );
     }

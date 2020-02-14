@@ -32,7 +32,7 @@ class App extends React.Component {
     return(
       <div className="App">
         <div className="navbar">
-          <Link to="/"><h2 id="logo">improveRTS</h2></Link>
+          <Link to="/" className="nodec"><h2 id="logo">improveRTS</h2></Link>
         </div>
         
 

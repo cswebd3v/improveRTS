@@ -14,6 +14,34 @@
     width: 400px;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 5px;
+}
+
+/* mobile styles */
+/* 414 x 736 iPhone 6/7/8 Plus */
+@media screen and (max-width: 415px) {
+    .vlog-preview {
+        height: 216px;
+        width: 90%;
+    }
+    .video-log {
+        width: 100%;
+    }
+
+}
+
+/* 375 x 667 iPhone 6/7/7 standard */
+@media screen and (max-width:376px) {
+    .vlog-preview {
+        height: 216px;
+        width: 90%;
+    }
+    .video-log {
+        width: 100%;
+    }
+}
+
+/* 320 x 568 iPhone 5/SE */
+@media screen and (max-width:321px) {
 }

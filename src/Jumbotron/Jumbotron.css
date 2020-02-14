@@ -9,4 +9,35 @@
 .jumbotron {
     height: 50%;
     margin-bottom: 75px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/* mobile styles */
+/* 414 x 736 iPhone 6/7/8 Plus */
+@media screen and (max-width: 415px) {
+    .videobox {
+        height: 216px;
+        width: 384px;
+    }
+    .jumbotron {
+        width: 100%;
+    }
+
+}
+
+/* 375 x 667 iPhone 6/7/7 standard */
+@media screen and (max-width:376px) {
+    .videobox {
+        height: 216px;
+        width: 384px;
+    }
+    .jumbotron {
+        width: 100%;
+    }
+}
+
+/* 320 x 568 iPhone 5/SE */
+@media screen and (max-width:321px) {
 }
