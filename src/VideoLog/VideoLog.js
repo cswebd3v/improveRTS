@@ -81,7 +81,7 @@ class VideoLog extends React.Component {
                     />
                     
                     <ScrollIntoView selector="#scroll" smooth>
-                        <button onClick={this.renderJumbo} id={vod.link}>Watch on Jumbotron</button>
+                        <button className="renderButton" onClick={this.renderJumbo} id={vod.link}>Watch on Jumbotron</button>
                     </ScrollIntoView>
                 </span>
                 ))}

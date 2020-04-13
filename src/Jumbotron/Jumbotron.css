@@ -8,7 +8,7 @@
 
 .jumbotron {
     height: 50%;
-    margin-bottom: 75px;
+    margin-bottom: 150px;
     text-align: center;
     display: block;
     margin: 0 auto;
@@ -40,4 +40,16 @@
 
 /* 320 x 568 iPhone 5/SE */
 @media screen and (max-width:321px) {
+    .videobox {
+        height: 180px;
+        width: 320px;
+    }
+    .jumbotron {
+        width: 100%;
+    }
+}
+
+/* ipad pro */
+@media screen and (max-width: 1024px) {
+
 }

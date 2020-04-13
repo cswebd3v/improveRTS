@@ -87,11 +87,11 @@ button:hover {
 
   .jumbotron {
     height:75%;
-    min-width: 80%;
+    
     margin-bottom: 100px;
   }
   .videobox {
-    min-width: 100%;
+    
     margin-bottom: 75px;
   }
   
@@ -105,7 +105,7 @@ button:hover {
     line-height: 2.00rem;
   }
   button {
-    font-size: 2.00rem;
+    font-size: 1.00rem;
     margin-top: 10px;
   }
 }

@@ -25,7 +25,7 @@ class ChooseGame extends React.Component {
     render() {       
         return (
             <div className='choose-game'>
-                <h1 className="h1style">Choose Wisely</h1>
+                <h1 className="h1style">Choose Wisely, commander</h1>
                 <div className='gameflex'> 
                 <Link to="/videolog" onClick={this.props.setGameId}>                  
                         <div className='choose-wc3'>
