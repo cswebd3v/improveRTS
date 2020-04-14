@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Link, Switch, Route} from "react-router-dom";
+import {Switch, Route, BrowserRouter} from "react-router-dom";
 import Landing from "../Landing/Landing.js";
 import ChooseGame from "../ChooseGame/ChooseGame";
 import VideoLog from "../VideoLog/VideoLog";
@@ -32,15 +32,16 @@ class App extends React.Component {
     return(
       <div className="App">
         <div className="navbar">
-          <Link to="/" className="nodec"><h2 id="logo">improveRTS</h2></Link>
+          <a href="/" className="nodec"><h2 id="logo">improveRTS</h2></a>
         </div>
         
-
+        <BrowserRouter>
         <Switch>
           <Route exact path="/"><ChooseGame setGameId2={this.setGameId2} setGameId={this.setGameId}/></Route>
           <Route path="/landing"><Landing /></Route>
           <Route path="/VideoLog"><VideoLog gameId={this.state.gameId}/></Route>
         </Switch>
+        </BrowserRouter>
 
         
 

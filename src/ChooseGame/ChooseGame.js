@@ -1,6 +1,5 @@
 import React from 'react';
 import './ChooseGame.css';
-import {Link} from "react-router-dom";
 import {API_ENDPOINT} from "../config";
 
 class ChooseGame extends React.Component {
@@ -26,18 +25,24 @@ class ChooseGame extends React.Component {
         return (
             <div className='choose-game'>
                 <h1 className="h1style">Choose Wisely, commander</h1>
+                
                 <div className='gameflex'> 
-                <Link to="/videolog" onClick={this.props.setGameId}>                  
+            
+                <a href="/videolog" onClick={this.props.setGameId}>                  
                         <div className='choose-wc3'>
                             <h2 className='hovertext'>WARCRAFT III</h2>
                         </div>
-                </Link>
-                <Link to="/videolog" onClick={this.props.setGameId2}> 
+                </a>
+                
+            
+                <a href="/videolog" onClick={this.props.setGameId2}> 
                         <div className='choose-sc2'>
                             <h2 className='hovertext2'>STARCRAFT II</h2>
                         </div>
-                </Link>
+                </a>
+                
                 </div>
+                
             </div>
         );
     }
