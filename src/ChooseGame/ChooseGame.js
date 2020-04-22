@@ -1,6 +1,7 @@
 import React from 'react';
 import './ChooseGame.css';
 import {API_ENDPOINT} from "../config";
+import {Link} from 'react-router-dom';
 
 class ChooseGame extends React.Component {
     constructor(props) {
@@ -28,18 +29,18 @@ class ChooseGame extends React.Component {
                 
                 <div className='gameflex'> 
             
-                <a href="/videolog" onClick={this.props.setGameId}>                  
+                <Link to="/videolog" onClick={this.props.setGameId}>                  
                         <div className='choose-wc3'>
                             <h2 className='hovertext'>WARCRAFT III</h2>
                         </div>
-                </a>
+                </Link>
                 
             
-                <a href="/videolog" onClick={this.props.setGameId2}> 
+                <Link to="/videolog" onClick={this.props.setGameId2}> 
                         <div className='choose-sc2'>
                             <h2 className='hovertext2'>STARCRAFT II</h2>
                         </div>
-                </a>
+                </Link>
                 
                 </div>
                 

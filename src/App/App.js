@@ -9,7 +9,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      gameId: ''
+      gameId: ' '
     };
     this.setGameId = this.setGameId.bind(this);
     this.setGameId2 = this.setGameId2.bind(this);
@@ -28,7 +28,7 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.gameId)
+    console.log('gameId is' + this.state.gameId)
     return(
       <div className="App">
         <div className="navbar">
